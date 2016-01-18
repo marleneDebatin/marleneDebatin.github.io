@@ -1,0 +1,17 @@
+p {
+      display: inline-block;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #3F51B5;
+      color: white;
+      font-family: sans-serif;
+}
+
+h1 {
+      display: inline-block;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      color: #3F51B5;
+}
