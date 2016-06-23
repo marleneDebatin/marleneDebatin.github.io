@@ -4,6 +4,24 @@ body {
       background-color: #FAFAFA;
 }
 
+#logo {
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      width: 470px;
+      height: 200px;
+      font-family: El Messiri;
+      left: 0px;
+      top: 70px;
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      h1 {
+            font-size: 70px;
+            line-height: 1.2;
+      }
+}
+
 .page {
       display: flex;
       justify-content: center;
@@ -22,24 +40,62 @@ body {
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       padding: 30px;
       padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: Titillium Web;
+      font-size: 18px;
+      z-index: 4;
       h2 {
-            color: black;
+            font-family: El Messiri;
+            font-weight: bold;
+            margin: 10px;
       }
+      p {
+            margin: 5px;
+            line-height: 1.4;
+            text-align:justify;
+      }
+}
+
+hr {
+      opacity: 0.12;
 }
 
 .article-image {
       width: 850px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      z-index: 1;
 }
 
 #first-article {
-      margin-left: 60px;
+      margin-left: 170px;
       width: 500px;
 }
-
 #first-image {
       margin-top: 30px;
       margin-left: 35%;
       margin-bottom: -180px;
       width: 750px;
+}
+
+#second-article {
+      margin-left: -190px;
+      width: 500px;
+}
+#second-image {
+      margin-top: -150px;
+      margin-left: -30%;
+      margin-bottom: -110px;
+      width: 700px;
+      z-index: 2;
+}
+
+#third-article {
+      margin-left: 100px;
+      width: 320px;
+}
+#third-image {
+      margin-top: -110px;
+      margin-left: 30%;
+      margin-bottom: -250px;
+      width: 800px;
 }
