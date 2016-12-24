@@ -1,0 +1,28 @@
+SECTIONS
+
+header: name, occupation
+      Marlene Deabtin
+      student, front end web-developer
+
+contact
+      email: email@example.com
+      facebook: Marlene Debatin on facebook (link to facebook.com)
+      github: my github (link to actual github)
+
+disclaimer: partly fictive
+
+contact
+education
+experience
+skills
+where ive worked google map
+online classes
+hobbies
+about me
+github etc.
+school accomplishemnts
+projects
+name, age, location
+languages
+
+scrollspy
