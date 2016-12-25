@@ -26,3 +26,7 @@ name, age, location
 languages
 
 scrollspy
+
+TODO
+
+arrow:hover no flickering
