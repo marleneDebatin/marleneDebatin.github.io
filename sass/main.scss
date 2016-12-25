@@ -1,3 +1,6 @@
+$accentcolor: #00BFA5;
+$grey: rgb(250, 250, 250);
+
 body,html {
       padding: 0px;
       margin: 0px;
@@ -6,58 +9,50 @@ body,html {
 #header {
       height: 100vh;
       width: 100%;
-      // background-color: rgb(250, 250, 250);
-      background-color: #00BFA5;
+      background-color: $accentcolor;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: space-between;
       color: white;
       font-family: Raleway, sans-serif;
-}
- #headerContent {
-       width: 100%;
-      display: flex;
-      align-items: center;
- }
-
- #headerMain {
-       margin: 80px;
-       h1 {
-             font-size: 90px;
-             font-family: Playfair Display, serif;
-             margin-top: 0px;
-             margin-bottom: 10px;
-       }
-       p {
-            //   text-transform: uppercase;
-             font-size: 25px;
-             font-weight: 300;
-      }
- }
-
-#contact {
-      margin: 30px 50px 50px 150px;
-      div {
-            height: 40px;
+      #headerContent {
+            width: 100%;
             display: flex;
+            align-items: center;
+            padding-top: 30vh;
       }
-      img {
-            fill: white;
+      #headerMain {
+            margin: 40px 80px 80px 120px;
+            width: 100vw;
+            h1 {
+                  font-size: 90px;
+                  font-family: Playfair Display, serif;
+                  margin-top: 0px;
+                  margin-bottom: 10px;
+            }
+            p {
+                  font-size: 25px;
+                  font-weight: 300;
+            }
       }
-      .contact {
-            width: 200px;
-            margin: 0px;
-            line-height: 40px;
-            padding-left: 5px;
+      #arrowDiv {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
       }
-      .contactImg {
-            width: 30px;
-            margin: 0px;
+      #arrow {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            img {
+                  width: 64px;
+                  height: 64px;
+            }
       }
-      #linkedinImg {
-            padding: 0px 3px 0px 4px;
-      }
-      #linkedin {
-            padding-left: 2px;
+      #arrow:hover {
+            margin-bottom: -15px;
       }
 }
