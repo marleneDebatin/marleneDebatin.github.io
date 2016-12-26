@@ -1,0 +1,149 @@
+$grey: rgb(248, 248, 248);
+$headlineColor: rgba(44, 61, 79, 1);
+$accentColor: #ff6b6b;
+
+body,html {
+      padding: 0px;
+      margin: 0px;
+}
+
+#footer {
+      background-color: $headlineColor;
+      color: white;
+      width: 100%;
+      font-family: Open Sans, sans-serif;
+      padding: 15px 0px 15px 0px;
+      text-align: center;
+      font-size: 14px;
+}
+
+#header {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      background: url(../img/workBlurred.jpg) no-repeat center center fixed;
+      background-size: cover;
+      #headerContent {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 30vh;
+      }
+      #headerMain {
+            margin: 40px 80px 80px 120px;
+            width: 100vw;
+            font-family: Open Sans, sans-serif;
+            display: flex;
+            align-items: center;
+            #intro {
+                  font-weight: lighter;
+            }
+            h1 {
+                  padding-right: 200px;
+                  font-size: 90px;
+                  margin: 0px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+            }
+            p {
+                  font-size: 25px;
+                  font-weight: 300;
+                  margin: 0px;
+            }
+            #occupation {
+                  padding: 50px;
+                  border-left: 1px solid white;
+            }
+      }
+      #arrowDiv {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+      }
+      #arrow {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            img {
+                  width: 64px;
+                  height: 64px;
+            }
+      }
+      #arrow:hover {
+            margin-bottom: -15px;
+      }
+}
+
+.section {
+      padding: 50px 20vw 50px 20vw;
+}
+
+h2 {
+      font-family: Open Sans, sans-serif;
+      text-transform: uppercase;
+      color: $accentColor;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+}
+
+hr {
+      width: 70px;
+      border: 2px solid $headlineColor;
+}
+
+.timeline::before {
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 4px;
+      left: 50%;
+      background-color: $headlineColor;
+}
+
+#educationImg {
+      height: 40px;
+      width: auto;
+}
+.timeline {
+      display: flex;
+      position: relative;
+      font-family: Open Sans, sans-serif;
+      .eventsLeft {
+            width: 50%;
+            text-align: right;
+            .event::after {
+                  right: -9px;
+            }
+      }
+      .eventsRight {
+            width: 50%;
+            text-align: left;
+            .event::after {
+                  left: -5px;
+            }
+      }
+      .event {
+            padding: 40px 70px 40px 70px;
+            margin: 0px;
+            position: relative;
+      }
+      .event::after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: $headlineColor;
+            position: absolute;
+            top: 64px;
+      }
+      #gymnasium {
+            margin-top: 100px;
+      }
+}

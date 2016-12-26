@@ -17,7 +17,7 @@ gulp.task('default', ['copy-html', 'images', 'styles', 'scripts'], function() {
 	gulp.watch('sass/**/*.scss', ['styles']);
 	gulp.watch('js/**/*.js', ['scripts']);
 	gulp.watch('img/**', ['images']);
-	gulp.watch('index.html', ['copy-html']);
+	gulp.watch('*.html', ['copy-html']);
 	gulp.watch('./dist/index.html').on('change', browserSync.reload);
 
 	browserSync.init({
@@ -52,9 +52,8 @@ gulp.task('scripts-dist', function() {
 });
 // copies the HTML to the dist folder
 gulp.task('copy-html', function() {
-	gulp.src('./index.html')
+	gulp.src('./*.html')
 		.pipe(gulp.dest('./dist'));
-		console.log("HTML has been updated");
 });
 // optimizes the images and saves them to the dist folder
 gulp.task('images', function() {

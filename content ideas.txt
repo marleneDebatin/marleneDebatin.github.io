@@ -30,3 +30,14 @@ scrollspy
 TODO
 
 arrow:hover no flickering
+
+SECTIONS REAL
+
+Kontakt, Geburtsdatum
+Schulausbildung
+Noten
+extracurricular (prefects, Klassensprecher)
+Online Kurse
+Hobbies
+"Skills" Compter
+Sprachen

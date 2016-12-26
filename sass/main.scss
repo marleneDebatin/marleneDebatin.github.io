@@ -1,5 +1,7 @@
 $accentcolor: #00BFA5;
-$grey: rgb(250, 250, 250);
+$accentcolorDark: #009883;
+$grey: rgb(248, 248, 248);
+$textcolor: rgba(0,0,0,0.72);
 
 body,html {
       padding: 0px;
@@ -55,4 +57,83 @@ body,html {
       #arrow:hover {
             margin-bottom: -15px;
       }
+}
+
+.text {
+      font-family: Open Sans, sans-serif;
+      color: $textcolor;
+      font-size: 20px;
+      line-height: 30px;
+}
+
+.section {
+      padding: 50px 20vw 50px 20vw;
+      p {
+            padding-left: 20px;
+      }
+}
+
+.grey {
+      background-color: $grey;
+}
+.white {
+      background-color: white;
+}
+
+.headline {
+      font-family: Playfair Display, serif;
+      color: $accentcolorDark;
+      font-size: 50px;
+      border-bottom: solid 2px $accentcolor;
+      font-weight: normal;
+      padding-left: 12px;
+}
+
+.eventTile {
+      position: relative;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      width: 250px;
+      background-color: white;
+      .eventHeader {
+            background-color: $accentcolor;
+            color: white;
+            font-family: Playfair Display;
+            font-size: 30px;
+            padding: 10px;
+      }
+      .eventContent {
+            padding: 20px 10px 20px 10px;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0px;
+            span {
+                  font-weight: bold;
+                  padding-right: 2px;
+            }
+      }
+}
+
+.eventTile::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      width: 0;
+      height: 0;
+
+      clear: both;
+}
+
+.right::after {
+      left: -16px;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-right: 20px solid $accentcolor;
+}
+
+.left::after {
+      right: -16px;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 20px solid $accentcolor;
 }
