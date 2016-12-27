@@ -2,7 +2,7 @@
 <html>
 <head>
       <link rel="stylesheet" type="text/css" href="css/minimal.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,400,700,800" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
 </head>
 <body>
@@ -31,12 +31,27 @@
             <div class="section events">
                   <h2>Schulbildung</h2>
                   <hr>
-                  <img src="img/education.svg" id="educationImg">
+                  <div class="timelineHeader">
+                        <div class="timelineIcon">
+                              <img src="img/education.svg" class="timelineImg">
+                        </div>
+                  </div>
                   <div class="timeline">
                         <div class="eventsLeft">
                               <div class="event" id="grundschule">
-                                    <h3>Grundschule</h3>
-                                    <p class="eventDate">2005 - 2008</p>
+                                    <h3>Grundschule auf der Uhlenhorst</h3>
+                                    <p class="eventDate">Hamburg, 2004 - 2008</p>
+                                    <p class="eventDescription">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                          et dolore magna aliqua.
+                                    </p>
+                                    <ul>
+                                          <li>Klassensprecher 3. Klasse</li>
+                                    </ul>
+                              </div>
+                              <div class="event" id="uni">
+                                    <h3>Universität</h3>
+                                    <p class="eventDate">wahrscheinlich Berlin, 2017 - ?</p>
                                     <p class="eventDescription">
                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                                           et dolore magna aliqua.
@@ -45,17 +60,62 @@
                         </div>
                         <div class="eventsRight">
                               <div class="event" id="gymnasium">
-                                    <h3>Gymnasium</h3>
-                                    <p class="eventDate">2005 - 2008</p>
+                                    <h3>Wilhelm Gymnasium</h3>
+                                    <p class="eventDate">Hamburg, 2008 - 2017</p>
                                     <p class="eventDescription">
-                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                          et dolore magna aliqua.
+                                          Physik Geographie Profil, erhöhtes Niveau Mathematik und Englisch, vorraussichtlicher Abschluss Abitur
                                     </p>
+                                    <ul>
+                                          <li>Klassensprecher 6. Klasse</li>
+                                          <li>Klassensprecher 9. Klasse</li>
+                                    </ul>
                               </div>
                         </div>
                   </div>
             </div>
-            <div id="footer">Icons by Rockicon and AlfredoCreates.com for The Noun Project</div>
+            <div class="section events">
+                  <h2>Online Kurse</h2>
+                  <hr>
+                  <div class="timelineHeader">
+                        <div class="timelineIcon">
+                              <img src="img/code.svg" class="timelineImg" id="iconOnline">
+                        </div>
+                  </div>
+                  <div class="timeline">
+                        <div class="eventsLeft">
+                              <div class="event" id="cs50">
+                                    <h3>cs50x: Introduction to Computer Science</h3>
+                                    <p class="eventDate">edx.com, 2015</p>
+                                    <p class="eventDescription">
+                                          Harvard University's introduction to the intellectual enterprises of computer science and the art of programming via edx.com
+                                    </p>
+                                    <ul>
+                                          <li><a href="">Zertifikat</a></li>
+                                    </ul>
+                              </div>
+                              <div class="event" id="nanodegree">
+                                    <h3>Front-End Web Developer Nanodegree</h3>
+                                    <p class="eventDate">udacity.com, 2016</p>
+                                    <p class="eventDescription">
+                                          Einzelne Kurse, ohne Zertifikat
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="eventsRight">
+                              <div class="event" id="cSharp">
+                                    <h3>Programming with C#</h3>
+                                    <p class="eventDate">edx.com, 2015</p>
+                                    <p class="eventDescription">
+                                          Learn the C# programming language, the most widely used language for .NET from Microsoft experts.
+                                    </p>
+                                    <ul>
+                                          <li><a href="">Zertifikat</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="footer">Icons by Rockicon and AlfredoCreates.com for The Noun Project | Design and Development by me</div>
       </div>
 
       <script href="js/all.js"></script>
