@@ -18,7 +18,7 @@ gulp.task('default', ['copy-html', 'images', 'styles', 'scripts'], function() {
 	gulp.watch('js/**/*.js', ['scripts']);
 	gulp.watch('img/**', ['images']);
 	gulp.watch('*.html', ['copy-html']);
-	gulp.watch('./dist/index.html').on('change', browserSync.reload);
+	gulp.watch('./dist/layer.html').on('change', browserSync.reload);
 
 	browserSync.init({
 		server: './dist'

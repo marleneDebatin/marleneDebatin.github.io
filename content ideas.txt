@@ -30,6 +30,7 @@ scrollspy
 TODO
 
 arrow:hover no flickering
+fonts: remove uneeded
 
 SECTIONS REAL
 
