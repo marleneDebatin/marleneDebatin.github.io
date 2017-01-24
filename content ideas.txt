@@ -1,0 +1,44 @@
+SECTIONS
+
+header: name, occupation
+      Marlene Deabtin
+      student, front end web-developer
+
+contact
+      email: email@example.com
+      facebook: Marlene Debatin on facebook (link to facebook.com)
+      github: my github (link to actual github)
+
+disclaimer: partly fictive
+
+contact
+education
+experience
+skills
+where ive worked google map
+online classes
+hobbies
+about me
+github etc.
+school accomplishemnts
+projects
+name, age, location
+languages
+
+scrollspy
+
+TODO
+
+arrow:hover no flickering
+fonts: remove uneeded
+
+SECTIONS REAL
+
+Kontakt, Geburtsdatum         email, GitHub, Hamburg, 02.03.1999, (facebook)
+Schulausbildung               Grundschule, Wilhelm Gymnasium,
+Noten                         Physik 1+, Geo 1, Mathe 1+, Englisch 1, Deutsch 1-, Chemie 1-, PGW 1, Kunst, Sport 2-,
+extracurricular               Prefects, Klassensprecher
+Online Kurse                  cs50, Microsoft C#, Nanodegree Front-End Developer, Codecademy HTML, CSS, Javascript, React
+Hobbies - Interessen          (Programmieren, Reisen, Lesen ?), Programmieren, Mathe, Englisch, Design
+"Skills" Compter              Microsoft Office, Google Drive, Photoshop, HTML, CSS, Javascript, React, C#, PHP, SQL
+Sprachen                      Deutsch (Muttersprache), Englisch (C1-2), Französisch und Latein (Grundkenntnisse)
