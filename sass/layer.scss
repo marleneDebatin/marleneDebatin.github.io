@@ -1,4 +1,5 @@
 $gray: rgb(241, 241, 241);
+$dark-gray: rgb(171, 171, 171);
 
 body, html {
       padding: 0px;
@@ -7,89 +8,247 @@ body, html {
 
 .page {
       background-color: $gray;
+      //background-color: white;
       padding: 0px;
+}
+
+.shadow {
+     box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.12);
 }
 
 #header {
       width: 100%;
-      height: 110vh;
-      background-image: url(../img/portrait.jpg);
+      height: 100vh;
+      background-image: url(../img/PiaNeu.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: 50% 50%;
-      color: white;
-      border: 20px solid white;
+      background-position: top;
+      color: black;
       font-family: Roboto;
+      display:flex;
       #nav {
             width: 100%;
+            position: absolute;
+            transition: all 0.3s ease;
             ul {
                   display: flex;
                   list-style-type: none;
                   float: right;
-                  padding: 10px 40px 0px 0px;
+                  padding: 35px 40px 0px 0px;
                   li {
-                        padding: 15px 25px 15px 25px;
+                        padding: 15px 18px 15px 18px;
                         font-size: 18px;
-                        font-weight: 600;
-                        text-transform: uppercase;
+                        color: rgba(0,0,0,0.6);
                   }
                   a {
+                       font-weight: 300;
                         cursor: pointer;
-                        color: white;
+                        color: black;
                   }
                   a:hover {
+                       font-weight: 400;
                         text-decoration: none;
-                        color: white;
+                        color: black;
                   }
             }
       }
       #headerContent {
-            height: 100vh;
+           border: 25px solid white;
             width: 100%;
             margin: 0px;
-            padding: 0px 0px 0px 30px;
+            padding: 0px;
+            padding-top: 10%;
             display: flex;
             align-items: center;
+            float: left;
             h1 {
-                  font-weight: bold;
-                  text-transform: uppercase;
+                  font-weight: 600;
+                  //text-transform: uppercase;
             }
             #name {
                   font-size: 100px;
             }
             #student {
-                  color: red;
                   font-weight: lighter;
                   font-size: 70px;
             }
       }
 }
 
+.sticky-nav {
+     background-color: white;
+     position: fixed !important;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 3;
+     ul {
+          padding-top: 0 !important;
+          margin-bottom: 0;
+          a{
+
+               font-weight: 600 !important;
+          }
+     }
+}
+.active {
+          color: $dark-gray !important;
+}
+.card-container {
+     padding-top: 30px;
+}
 .card {
       background-color: white;
       padding: 70px 70px 50px 70px;
       font-family: Roboto;
       display: flex;
+      flex-direction: row;
       margin-bottom: 20px;
+      border: none;
+      border-radius: 0px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.12);
       .headline {
             width: 40%;
             h1 {
-                  text-transform: uppercase;
+                  //text-transform: uppercase;
                   padding-top: 0px;
                   margin-top: 0px;
                   font-weight: 600;
+                  font-size: 27px;
             }
       }
       .text {
             color: rgba(0, 0, 0, 0.7);
             width: 100%;
-            border-left: 3px solid black;
+            //border-left: 3px solid black;
             padding-left: 40px;
-            padding-top: 5px;
+            padding-top: 0px;
             font-size: 18px;
+            white-space: normal;
+            .entry{
+                 padding-bottom: 20px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: flex-start;
+            }
+            .title {
+                 display: flex;
+                 h2 {
+                      padding-right: 10px;
+                      color: black;
+                 }
+                 h3 {
+                      color: $dark-gray;
+                 }
+                 h2, h3 {
+                      font-weight: 600;
+                      font-size: 27px;
+                      white-space: nowrap;
+                      margin-bottom: 5px;
+                 }
+            }
+            .description {
+                 font-size: 18px;
+                 text-align: justify;
+            }
+            .date {
+                 font-size: 13px;
+                 color: $dark-gray;
+                 font-weight: lighter;
+                 margin-bottom: 5px;
+            }
+
       }
 }
 
-#firstCard {
-      margin-top: -10vh;
+// animate the slde in effect
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.6s cubic-bezier(0.170, 0.560, 0.320, 1.020) forwards;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+// style the contact form
+input, textarea {
+     border-radius: 0px !important;
+     margin-bottom: 15px;
+     background-color: $gray !important;
+     border: none !important;
+}
+.small-input {
+     width: 50%;
+}
+.large-input {
+     height: 200px !important;
+}
+button {
+     background-color: rgba(0,0,0,0);
+     display: flex;
+     border: none;
+     padding-top: 5px;
+     font-weight: 500;
+     font-size: 18px;
+     height: 45px;
+     transition: all 0.3s ease;
+     width: 250px;
+     justify-content: flex-start;
+     z-index: 3;
+     .button-icon {
+          padding-left: 15px;
+          position: relative;
+          top:-1px;
+     }
+}
+button:hover {
+     color: white;
+     position: relative;
+     justify-content: center;
+     .button-icon {
+          display: none;
+     }
+}
+button::after {
+     height: 100%;
+     position: absolute;
+     content: "";
+     width: 0;
+     top: 0;
+     right: 0;
+     z-index: -1;
+     background: black;
+     transition: all 0.3s ease;
+}
+button:hover::after {
+     left: 0;
+     width: 100%;
+}
+button:active {
+     top:2px;
+}
+
+.submission-message {
+     display: none;
+}
+
+.footer {
+     background-color: white;
+     height: 30px;
+}
+
+//small laptops, tablets
+@media (max-width: 1300px){
+     .title {
+          flex-direction: column;
+     }
+}
+@media (max-width: 570px) {
+     .card {
+          flex-direction: column ;
+     }
 }
