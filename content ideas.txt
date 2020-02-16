@@ -1,38 +1,21 @@
-SECTIONS
+Font Sizes:
 
-header: name, occupation
-      Marlene Deabtin
-      student, front end web-developer
+Card
+Headlines: 27px 1,5 em
+subtitles: 14px 0,7777em
+text/button: 18px 1em
+text-boxes: 16px (not set by me)
 
-contact
-      email: email@example.com
-      facebook: Marlene Debatin on facebook (link to facebook.com)
-      github: my github (link to actual github)
-
-disclaimer: partly fictive
-
-contact
-education
-experience
-skills
-where ive worked google map
-online classes
-hobbies
-about me
-github etc.
-school accomplishemnts
-projects
-name, age, location
-languages
-
+card size: 18px;
 
 TODO
 
 fix navbar hover shuffle
 fix goddamn button
 responsiveness
-test form
+hamburger menu
+test form + validation
 texte
-skills section
 remove junk
 impressum + hosting
+fix github account

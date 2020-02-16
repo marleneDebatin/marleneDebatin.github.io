@@ -8,7 +8,6 @@ body, html {
 
 .page {
       background-color: $gray;
-      //background-color: white;
       padding: 0px;
 }
 
@@ -17,7 +16,7 @@ body, html {
 }
 
 #header {
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       background-image: url(../img/PiaNeu.jpg);
       background-size: cover;
@@ -101,29 +100,32 @@ body, html {
       background-color: white;
       padding: 70px 70px 50px 70px;
       font-family: Roboto;
+      font-size: 18px;
       display: flex;
       flex-direction: row;
+      //flex-direction: column;
       margin-bottom: 20px;
       border: none;
       border-radius: 0px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.12);
       .headline {
-            width: 40%;
+            width: 25%;
+            padding: 0px 40px 30px 0px;
+            min-width: 200px;
             h1 {
-                  //text-transform: uppercase;
                   padding-top: 0px;
                   margin-top: 0px;
                   font-weight: 600;
-                  font-size: 27px;
+                  //font-size: 27px;
+                  font-size: 1.5em;
             }
       }
       .text {
             color: rgba(0, 0, 0, 0.7);
-            width: 100%;
-            //border-left: 3px solid black;
-            padding-left: 40px;
+            width: 75%;
             padding-top: 0px;
-            font-size: 18px;
+            //font-size: 18px;
+            font-size: 1em;
             white-space: normal;
             .entry{
                  padding-bottom: 20px;
@@ -133,32 +135,41 @@ body, html {
             }
             .title {
                  display: flex;
-                 h2 {
-                      padding-right: 10px;
-                      color: black;
-                 }
-                 h3 {
-                      color: $dark-gray;
-                 }
-                 h2, h3 {
-                      font-weight: 600;
-                      font-size: 27px;
-                      white-space: nowrap;
-                      margin-bottom: 5px;
-                 }
             }
             .description {
-                 font-size: 18px;
-                 text-align: justify;
+                 //font-size: 18px;
+                 font-size: 1em;
+                 margin-bottom: 5px;
+                 //text-align: justify;
             }
             .date {
-                 font-size: 13px;
+                 //font-size: 14px;
+                 font-size: 0.9em;
                  color: $dark-gray;
                  font-weight: lighter;
                  margin-bottom: 5px;
             }
 
       }
+}
+.black-title {
+     padding-right: 10px;
+     color: black;
+}
+.gray-title {
+     color: $dark-gray;
+}
+.black-title, .gray-title {
+     font-weight: 600;
+     //font-size: 27px;
+     font-size: 1.5em;
+     margin-bottom: 5px;
+     white-space: nowrap;
+}
+
+.proficiency-level {
+     color: $dark-gray;
+     word-break: keep-all;
 }
 
 // animate the slde in effect
@@ -172,6 +183,15 @@ body, html {
 }
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+
+.skills-column {
+     p {
+          margin-bottom: 2px;
+     }
+     h3 {
+          margin-bottom: 10px;
+     }
 }
 
 // style the contact form
@@ -193,7 +213,8 @@ button {
      border: none;
      padding-top: 5px;
      font-weight: 500;
-     font-size: 18px;
+     //font-size: 18px;
+     font-size: 1em;
      height: 45px;
      transition: all 0.3s ease;
      width: 250px;
@@ -241,14 +262,72 @@ button:active {
      height: 30px;
 }
 
-//small laptops, tablets
-@media (max-width: 1300px){
+//responsiveness
+@media only screen and (max-width: 1300px){
      .title {
           flex-direction: column;
      }
+     .black-title, .gray-title {
+          white-space: normal;
+     }
+     .text {
+          width: 60%;
+     }
+     .headline {
+          width: 40%;
+     }
 }
-@media (max-width: 570px) {
+@media only screen and (max-width: 1100px) {
+     #student, #name {
+          text-shadow: 0 10px 30px rgba(255, 255, 255,0.2), 0 10px 20px rgba(255,255,255,0.4);
+          //color: white;
+     }
+}
+@media only screen and (max-width: 1000px) {
+     #nav {
+          display: none;
+     }
+}
+@media only screen and (max-width: 767px) {
      .card {
-          flex-direction: column ;
+          margin-left: 3vw;
+          margin-right: 3vw;
+          width: 94vw;
+     }
+}
+@media only screen and (max-width: 700px) {
+     .card {
+          flex-direction: column;
+     }
+     .headline {
+          h1 {
+               text-transform: uppercase;
+          }
+          width: 100% !important;
+          min-width: none;
+          padding-right: 0 !important;
+     }
+     .text {
+          width: 100% !important;
+     }
+}
+@media only screen and (max-width: 650px) {
+     #name {
+          font-size: 70px !important;
+          line-height: 70px;
+
+     }
+     #student {
+          font-size: 40px !important;
+          line-height: 40px;
+
+     }
+}
+@media only screen and (max-width: 575px) {
+     .card {
+          padding: 70px 30px 50px 30px;
+     }
+     .sprachen {
+          padding-top: 20px;
      }
 }
