@@ -10,7 +10,7 @@ card size: 18px;
 
 TODO
 
+typography?
 texte
-remove junk
-impressum + hosting
+impressum + domain
 fix github account

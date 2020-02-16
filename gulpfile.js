@@ -22,7 +22,7 @@ watch('js/**/*.js', scripts);
 watch('img/**', images);
 watch('fonts/**', fonts);
 watch('*.html', copyHtml);
-watch('./dist/layer.html').on('change', browserSync.reload);
+watch('./dist/index.html').on('change', browserSync.reload);
 
 // converting, concatinating and saving the Javascript to the dist folder
 // Standard Javascript task for live editing

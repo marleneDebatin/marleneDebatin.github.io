@@ -1,3 +1,6 @@
+/*
+ * Animate Scrolling effect with cards
+ */
 // jQuery extension to determine if an element is visible/was scrolled past
 (function($) {
      $.fn.visible = function(partial) {
@@ -36,7 +39,9 @@ win.scroll(function(event) {
 
 });
 
-// contact form submission to enformed.io
+/*
+ *  contact form submission to enformed.io
+ */
 $("#contact-form").submit(function(){
      var myData = {
           "email" : $("#email").val(),

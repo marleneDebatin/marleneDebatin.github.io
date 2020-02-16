@@ -3907,6 +3907,9 @@
     return a.$ === n && (a.$ = oc), b && a.jQuery === n && (a.jQuery = nc), n;
   }, b || (a.jQuery = a.$ = n), n;
 });
+/*
+ * Animate Scrolling effect with cards
+ */
 // jQuery extension to determine if an element is visible/was scrolled past
 (function ($) {
   $.fn.visible = function (partial) {
@@ -3939,7 +3942,10 @@ win.scroll(function (event) {
       el.addClass("come-in");
     }
   });
-}); // contact form submission to enformed.io
+});
+/*
+ *  contact form submission to enformed.io
+ */
 
 $("#contact-form").submit(function () {
   var myData = {
