@@ -220,6 +220,7 @@ button {
      width: 250px;
      justify-content: flex-start;
      z-index: 3;
+     position: relative;
      .button-icon {
           padding-left: 15px;
           position: relative;
@@ -228,7 +229,6 @@ button {
 }
 button:hover {
      color: white;
-     position: relative;
      justify-content: center;
      .button-icon {
           display: none;

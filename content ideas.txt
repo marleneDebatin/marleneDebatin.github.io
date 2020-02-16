@@ -10,11 +10,6 @@ card size: 18px;
 
 TODO
 
-fix navbar hover shuffle
-fix goddamn button
-responsiveness
-hamburger menu
-test form + validation
 texte
 remove junk
 impressum + hosting

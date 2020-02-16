@@ -66,7 +66,7 @@ function styles() {
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions']
+			cascade: false
 		}))
 		.pipe(dest('dist/css'))
 		.pipe(browserSync.stream());
