@@ -1,0 +1,16 @@
+Font Sizes:
+
+Card
+Headlines: 27px 1,5 em
+subtitles: 14px 0,7777em
+text/button: 18px 1em
+text-boxes: 16px (not set by me)
+
+card size: 18px;
+
+TODO
+
+typography
+texte
+impressum + domain
+fix github account

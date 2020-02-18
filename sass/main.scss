@@ -1,0 +1,333 @@
+/*
+ *    Color Variables
+*/
+$gray: rgb(241, 241, 241);
+$dark-gray: rgb(171, 171, 171);
+
+/*
+ *    General styling
+*/
+body, html {
+      padding: 0px;
+      margin: 0px;
+}
+.page {
+      background-color: $gray;
+      padding: 0px;
+}
+.shadow {
+     box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/*
+ * Styling of the header
+ */
+#header {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../img/PiaNeu.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      color: black;
+      font-family: Roboto;
+      display:flex;
+      #nav {
+            width: 100%;
+            position: absolute;
+            transition: all 0.3s ease;
+            ul {
+                  display: flex;
+                  list-style-type: none;
+                  float: right;
+                  padding: 35px 40px 0px 0px;
+                  li {
+                        padding: 15px 18px 15px 18px;
+                        font-size: 18px;
+                        color: rgba(0,0,0,0.6);
+                  }
+                  a {
+                       font-weight: 300;
+                        cursor: pointer;
+                        color: black;
+                  }
+                  a:hover {
+                       font-weight: 400;
+                        text-decoration: none;
+                        color: black;
+                  }
+            }
+      }
+      #headerContent {
+           border: 25px solid white;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            padding-top: 10%;
+            display: flex;
+            align-items: center;
+            float: left;
+            h1 {
+                  font-weight: 600;
+            }
+            #name {
+                  font-size: 100px;
+            }
+            #student {
+                  font-weight: lighter;
+                  font-size: 70px;
+            }
+      }
+}
+
+/*
+ * Styling of card section
+ */
+.card-container {
+     padding-top: 30px;
+}
+.card {
+      background-color: white;
+      padding: 70px 70px 50px 70px;
+      font-family: Roboto;
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 0px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.12);
+      .headline {
+            width: 25%;
+            padding: 0px 40px 30px 0px;
+            min-width: 200px;
+            h1 {
+                  padding-top: 0px;
+                  margin-top: 0px;
+                  font-weight: 600;
+                  font-size: 1.5em;
+            }
+      }
+      .text {
+            color: rgba(0, 0, 0, 0.7);
+            width: 75%;
+            padding-top: 0px;
+            font-size: 1em;
+            white-space: normal;
+            .entry{
+                 padding-bottom: 20px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: flex-start;
+            }
+            .title {
+                 display: flex;
+            }
+            .description {
+                 font-size: 1em;
+                 margin-bottom: 5px;
+            }
+            .date {
+                 font-size: 0.9em;
+                 color: $dark-gray;
+                 font-weight: lighter;
+                 margin-bottom: 5px;
+            }
+
+      }
+}
+.black-title {
+     padding-right: 10px;
+     color: black;
+}
+.gray-title {
+     color: $dark-gray;
+}
+.black-title, .gray-title {
+     font-weight: 600;
+     font-size: 1.5em;
+     margin-bottom: 5px;
+     white-space: nowrap;
+}
+.proficiency-level {
+     color: $dark-gray;
+     word-break: keep-all;
+}
+
+/*
+ * Animate Card Slide In Effect
+ */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.6s cubic-bezier(0.170, 0.560, 0.320, 1.020) forwards;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+/*
+ * Style Skills Column
+ */
+.skills-column {
+     p {
+          margin-bottom: 2px;
+     }
+     h3 {
+          margin-bottom: 10px;
+     }
+}
+
+/*
+ *  Style the contact form
+ */
+input, textarea {
+     border-radius: 0px !important;
+     margin-bottom: 15px;
+     background-color: $gray !important;
+     border: none !important;
+}
+.small-input {
+     width: 50%;
+}
+.large-input {
+     height: 200px !important;
+}
+.submission-message {
+     display: none;
+}
+/*
+ * Animate Contact Button
+ */
+button {
+     background-color: rgba(0,0,0,0);
+     display: flex;
+     border: none;
+     padding-top: 5px;
+     font-weight: 500;
+     font-size: 1em;
+     height: 45px;
+     transition: all 0.3s ease;
+     width: 250px;
+     justify-content: flex-start;
+     z-index: 3;
+     position: relative;
+     .button-icon {
+          padding-left: 15px;
+          position: relative;
+          top:-1px;
+     }
+}
+button:hover {
+     color: white;
+     justify-content: center;
+     .button-icon {
+          display: none;
+     }
+}
+button::after {
+     height: 100%;
+     position: absolute;
+     content: "";
+     width: 0;
+     top: 0;
+     right: 0;
+     z-index: -1;
+     background: black;
+     transition: all 0.3s ease;
+}
+button:hover::after {
+     left: 0;
+     width: 100%;
+}
+button:active {
+     top:2px;
+}
+
+.footer {
+     background-color: white;
+     height: 30px;
+}
+
+/*
+ *   Responsiveness
+ *
+ *
+ */
+//screen isn't big enoug to display the titles next to each other
+@media only screen and (max-width: 1300px){
+     .title {
+          flex-direction: column;
+     }
+     .black-title, .gray-title {
+          white-space: normal;
+     }
+     .text {
+          width: 60%;
+     }
+     .headline {
+          width: 40%;
+     }
+}
+// black text in header is too close to black dress in photo and needs a white shadow
+@media only screen and (max-width: 1100px) {
+     #student, #name {
+          text-shadow: 0 10px 30px rgba(255, 255, 255,0.2), 0 10px 20px rgba(255,255,255,0.4);
+     }
+}
+// navbar cant be displayed properly ==> no navbar
+@media only screen and (max-width: 1000px) {
+     #nav {
+          display: none;
+     }
+}
+// less space next to the cards
+@media only screen and (max-width: 767px) {
+     .card {
+          margin-left: 3vw;
+          margin-right: 3vw;
+          width: 94vw;
+     }
+}
+// get rid of column layout, everything in rows now
+@media only screen and (max-width: 700px) {
+     .card {
+          flex-direction: column;
+     }
+     .headline {
+          h1 {
+               text-transform: uppercase;
+          }
+          width: 100% !important;
+          min-width: none;
+          padding-right: 0 !important;
+     }
+     .text {
+          width: 100% !important;
+     }
+}
+// screen to small to display header font-sizes
+@media only screen and (max-width: 650px) {
+     #name {
+          font-size: 70px !important;
+          line-height: 70px;
+
+     }
+     #student {
+          font-size: 40px !important;
+          line-height: 40px;
+
+     }
+}
+// even less columns and less padding
+@media only screen and (max-width: 575px) {
+     .card {
+          padding: 70px 30px 50px 30px;
+     }
+     .sprachen {
+          padding-top: 20px;
+     }
+}
