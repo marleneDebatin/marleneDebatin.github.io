@@ -10,7 +10,7 @@ card size: 18px;
 
 TODO
 
-typography
-texte
-impressum + domain
-fix github account
+- "Skills"
+- Über Mich Text kein Bandwurmsatz
+- Uni Text ausführlicher
+- Singapur Text ausführlicher (Was gelernt? interkulturelle Kompetenzen)
