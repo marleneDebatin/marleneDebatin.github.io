@@ -11,6 +11,7 @@ $text-color: rgba(0, 0, 0, 0.7);
 body, html {
       padding: 0px;
       margin: 0px;
+      scroll-behavior: smooth;
 }
 .page {
       background-color: $gray;
@@ -223,31 +224,6 @@ button {
           top:-1px;
      }
 }
-button:hover {
-     color: white;
-     justify-content: center;
-     .button-icon {
-          display: none;
-     }
-}
-button::after {
-     height: 100%;
-     position: absolute;
-     content: "";
-     width: 0;
-     top: 0;
-     right: 0;
-     z-index: -1;
-     background: black;
-     transition: all 0.3s ease;
-}
-button:hover::after {
-     left: 0;
-     width: 100%;
-}
-button:active {
-     top:2px;
-}
 
 /*
  * Style footer
@@ -292,6 +268,9 @@ button:active {
 @media only screen and (max-width: 1000px) {
      #nav {
           display: none;
+     }
+     #email {
+          width: 100%;
      }
 }
 // less space next to the cards
@@ -339,5 +318,34 @@ button:active {
      }
      .sprachen {
           padding-top: 20px;
+     }
+}
+//button hover effect only when not touch
+@media (pointer: fine) {
+
+     button:hover {
+          color: white;
+          justify-content: center;
+          .button-icon {
+               display: none;
+          }
+     }
+     button::after {
+          height: 100%;
+          position: absolute;
+          content: "";
+          width: 0;
+          top: 0;
+          right: 0;
+          z-index: -1;
+          background: black;
+          transition: all 0.3s ease;
+     }
+     button:hover::after {
+          left: 0;
+          width: 100%;
+     }
+     button:active {
+          top:2px;
      }
 }
